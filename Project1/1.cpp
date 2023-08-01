@@ -1,4 +1,10 @@
 #include <stdio.h>
+#define HUNGRY 0x01
+#define THIRSTY 0x02
+#define TIRED 0x04
+#define FIRE 0x08
+#define COLD 0x10
+#define POISON 0x20
 
 int main() {
 	// 자료형 : Data Type
@@ -130,10 +136,45 @@ int main() {
 		a = 10;
 	}
 
+	//----------------------------------------07/31-----------------------------------
 
+	// 비트 연산자
 
+	// 비트 쉬프트 << , >> 
 
+	unsigned char byte = 1;
 
+	byte <<= 1;    // 0001 -> 0010  == 2
+
+	byte >>= 2;    // 0010 -> 0000 == 0 
+
+	unsigned char byte2 = 13;
+
+	byte2 <<= 3;		// 2^n  배수
+	byte2 >>= 3;		// 2^n 으로 나눈 몫
+
+	// 비트 곱(&), 합(|), xor(^) , 반전(~)
+	// & : 둘다 1이면 1 , | : 둘중 하나라도 1이면 1 , ^ : 같으면 0 , 다르면 1, ~ : 0은1 1은0으로
+	
+	unsigned int iStatus = 0;
+	// 상태 추가
+	iStatus |= HUNGRY;
+	
+	// 전처리기 #define HUNGRY 1
+	// 전처리기 사용 이유 : 가독성 , 유지보수가 편함 
+	// int형은 32bit 이므로 32개의 상태를 표현 가능
+
+	iStatus |= THIRSTY;	
+
+	// 상태 확인
+	if (iStatus & THIRSTY) 
+	{
+
+	}
+	// 특정 비트 제거
+	iStatus &= ~THIRSTY;
+
+	//-------------------------------08/01--------------------------------------------
 
 
 
