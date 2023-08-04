@@ -6,6 +6,17 @@
 #define COLD 0x10
 #define POISON 0x20
 
+
+// 전역변수
+int global = 0;
+
+// 함수
+
+int Add(int left, int right)
+{
+	return left + right;
+}
+
 int main() {
 	// 자료형 : Data Type
 	// 정수형 : char(1), short(2), int(4) long(4), long long(8) 
@@ -175,6 +186,56 @@ int main() {
 	iStatus &= ~THIRSTY;
 
 	//-------------------------------08/01--------------------------------------------
+
+	// 변수
+	// 1. 지역변수
+	// 2. 전역 변수
+	// 3. 정적 변수
+	// 4. 외부 변수
+
+	int iName = 0;
+
+	// 지역변수
+	// 괄호 안에 선언된 변수(함수, 지역)
+	{
+		// 변수명 규칙
+		int iName = 1;
+	}
+
+	iName = 2;
+
+	// 함수 
+	data = Add(10, 20);
+
+
+	// 반복문
+	/*for (반복자 초기화; 반복자 조건 체크; 반복자 변경)
+	{
+
+	}*/
+
+	for (int i = 0; i < 10; ++i) 
+	{
+		if (i % 2 == 1)
+		{
+			continue;
+		}
+
+		printf("%d\n", i);
+		// break
+	}
+	// 입출력 함수 printf(), scanf()
+
+	i = 0;
+	while (i < 2)
+	{
+		printf("OoO\n");
+
+		++i;
+	}
+
+
+
 
 
 
