@@ -17,6 +17,18 @@ int Add(int left, int right)
 	return left + right;
 }
 
+int Factorial(int num)
+{
+	int iValue = 1;
+
+	for (int i = 0; i < num - 1; ++i)
+	{
+		iValue = iValue * (i + 2);
+
+	}
+	return iValue;
+}
+
 int main() {
 	// 자료형 : Data Type
 	// 정수형 : char(1), short(2), int(4) long(4), long long(8) 
@@ -224,7 +236,6 @@ int main() {
 		printf("%d\n", i);
 		// break
 	}
-	// 입출력 함수 printf(), scanf()
 
 	i = 0;
 	while (i < 2)
@@ -237,6 +248,52 @@ int main() {
 
 
 
+	//------------------------------------------08/04--------------------------
+
+	// 단축키
+	// 지정한 구문 주석		: Ctrl + k , c
+	// 지정한 구문 주석 해체 : Ctrl + k , u
+	// Alt Drag
+
+	// 디버깅 단축키
+	// f5			: 디버깅 시작, 다음 중단점 까지
+	// f9			: 중단점 생성 및 해제
+	// f10			: 디버깅 중 , 구문 수행(함수 진입 : f11(최소 단위))
+	// Shift + f5	: 디버깅 종료
+
+	// 조사식
+	
+	// 콘솔
+	// 입출력 함수 printf(), scanf()
+
+	// printf
+	printf("abcdef %f \n", 20.1234f);
+
+	for (int i = 0; i < 10; ++i)
+	{
+		printf("Output i : %d\n", i);
+	}
+
+	// scanf
+
+	int input = 0;
+
+	scanf_s("%d", &input);
+	printf("input : %d\n", input);
+
+
+	// 함수 (2) , (3)
+
+	// Stack , Queue
+	// 함수가 사용하는 메모리 영역
+	// 스택 메모리 영역
+
+	// Factorial
+
+	int test = 5;
+	test = Factorial(test);
+	printf("\n %d \n", test);
+	
 
 
 	return 0;
