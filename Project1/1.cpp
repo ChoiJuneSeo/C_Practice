@@ -28,7 +28,48 @@ int Factorial(int num)
 	}
 	return iValue;
 }
+int reFact(int num)
+{
+	if (num == 1)
+	{
+		return 1;
+	}
 
+	return num * reFact(num - 1);
+
+}
+
+int Fibo(int num)
+{
+	if (num == 1 || num == 2)
+	{
+		return 1;
+	}
+
+	return Fibo(num - 1) + Fibo(num - 2);
+
+}
+int Fibo2(int num)
+{
+	int a = 1;
+	int b = 1;
+	int temp = 0;
+
+	if (num == 1 || num == 2)
+	{
+		return 1;
+
+	}
+
+	for (int i = 0; i < num - 2; ++i)
+	{
+		temp = a + b;
+		a = b;
+		b = temp;
+	}
+
+	return temp;
+}
 int main() {
 	// 자료형 : Data Type
 	// 정수형 : char(1), short(2), int(4) long(4), long long(8) 
@@ -278,8 +319,8 @@ int main() {
 
 	int input = 0;
 
-	scanf_s("%d", &input);
-	printf("input : %d\n", input);
+	//scanf_s("%d", &input);
+	//printf("input : %d\n", input);
 
 
 	// 함수 (2) , (3)
@@ -290,10 +331,31 @@ int main() {
 
 	// Factorial
 
-	int test = 5;
-	test = Factorial(test);
-	printf("\n %d \n", test);
+	a = 5;
+	int test = Factorial(a);
+	printf("%d팩토리얼 : %d \n", a, test);
 	
+
+	// ------------------------------------------08/05-------------------------------
+
+	// 재귀함수
+	// 가독성, 구현의 용이
+	a = 4;
+	i = reFact(a);
+	printf("%d팩토리얼 : %d\n", a, i);
+
+	// 피보나치 수열
+	a = 10;
+	i = Fibo(a);
+	printf("%d번째 피보나치 수는 %d입니다.\n", a, i);
+	a = 40;
+	i = Fibo2(a);
+	printf("%d번째 피보나치 수는 %d입니다.\n", a, i);
+
+	// 재귀함수로 구현할 경우 속도가 느림 ( O(2^n) )
+	//------------------------------------------------08/06---------------------------------------------
+
+
 
 
 	return 0;
