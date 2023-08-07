@@ -6,9 +6,23 @@
 #define COLD 0x10
 #define POISON 0x20
 
+typedef struct _tagMYST
+{
+	int a;
+	float f;
+
+}MYST;
+typedef struct _tagBig
+{
+	MYST k;
+	int i;
+	char c;
+
+}BIG;
+typedef int INT;
 
 // 전역변수
-int global = 0;
+int global = 0; // Data 영역 
 
 // 함수
 
@@ -362,6 +376,35 @@ int main() {
 
 	// 인덱스 접근
 	iArray[4] = 10;
+
+	// 구조체 
+	// 사용자 정의 자료형
+
+	MYST t = {};
+
+	int iSize = sizeof(MYST);
+	t.a = 10;
+	t.f = 10.1234f;
+
+	INT I = 10;
+
+	// C에서도 문제 없게 하기 위해 typedef 로 만듬.
+
+	// 1. 지역 변수
+	// 2. 전역 변수
+	// 3. 정적 변수
+	// 4. 외부 변수
+	
+	// 메모리 영역
+	// 1. 스택 영역
+	// 2. 데이터 영역
+	// 3. 읽기 전용(코드 , ROM)
+	// 4. 힙 영역
+
+	// Data 영역 특징
+	// 프로그램 시작 시 생성
+	// 프로그램 종료 시 해제
+
 
 
 
