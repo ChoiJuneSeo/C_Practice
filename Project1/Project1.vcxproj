@@ -127,7 +127,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="1.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="func.cpp" />
+    <ClCompile Include="07_22.cpp" />
+    <ClCompile Include="07_30.cpp" />
+    <ClCompile Include="07_31.cpp" />
+    <ClCompile Include="08_04.cpp" />
+    <ClCompile Include="08_01.cpp" />
+    <ClCompile Include="08_05.cpp" />
+    <ClCompile Include="08_06.cpp" />
+    <ClCompile Include="08_07.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="func.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
