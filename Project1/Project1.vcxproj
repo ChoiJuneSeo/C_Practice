@@ -137,9 +137,11 @@
     <ClCompile Include="08_05.cpp" />
     <ClCompile Include="08_06.cpp" />
     <ClCompile Include="08_07.cpp" />
+    <ClCompile Include="08_10.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="func.h" />
+    <ClInclude Include="common.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

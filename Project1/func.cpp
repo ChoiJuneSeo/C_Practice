@@ -1,8 +1,12 @@
 #include "func.h"
-
+#include "common.h"
+#include <stdio.h>
 
 int Add(int left, int right)
 {
+	printf("g_iStatic 의 값은 : %d\n", g_iStatic);
+	printf("g_iExtern 의 값은 : %d\n", g_iExtern);
+
 	return left + right;
 }
 int Factorial(int num)
