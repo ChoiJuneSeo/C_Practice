@@ -2,6 +2,8 @@
 #include "common.h"
 #include <stdio.h>
 
+int g_iExtern = 200;
+
 int Add(int left, int right)
 {
 	printf("g_iStatic ÀÇ °ªÀº : %d\n", g_iStatic);
