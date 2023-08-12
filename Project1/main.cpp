@@ -10,10 +10,7 @@
 //#define POISON 0x20
 
 
-
 int main() {
-
-
 
 
 	return 0;

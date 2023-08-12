@@ -51,6 +51,9 @@
     <ClCompile Include="08_11.cpp">
       <Filter>헤더 파일</Filter>
     </ClCompile>
+    <ClCompile Include="08_12.cpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="func.h">

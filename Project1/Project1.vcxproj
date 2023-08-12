@@ -139,6 +139,7 @@
     <ClCompile Include="08_07.cpp" />
     <ClCompile Include="08_10.cpp" />
     <ClCompile Include="08_11.cpp" />
+    <ClCompile Include="08_12.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="func.h" />
