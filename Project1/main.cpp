@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include "func.h"
 #include "common.h"
+#include <wchar.h>
+
+
 
 //#define HUNGRY 0x01
 //#define THIRSTY 0x02
@@ -8,6 +11,21 @@
 //#define FIRE 0x08
 //#define COLD 0x10
 //#define POISON 0x20
+
+unsigned int GetLength(const wchar_t* _pStr)
+{
+	// 문자 개수 체크 용도
+	int i = 0;
+
+	while (_pStr[i] != '\0')
+	{
+		
+		++i;
+		
+	}
+
+	return i;
+}
 
 
 int main() {
@@ -31,9 +49,19 @@ int main() {
 	szChar[1] = 'z';
 	// pChar[1] = 'z';
 
+	// 멀티바이트 ( 이젠 안쓸거임 , ms만 사용중 )
+	char szTest[10] = "abc한글";
 	
+	// 와이드바이트 ( 전부 2바이트 )
+	wchar_t szTestW[10] = L"abc한글";
 
+	wchar_t szName[10] = L"Raimond";
 
+	int iLen = wcslen(szName);
+	int iLen2 = GetLength(szName);
+
+	// 문자열 이어 붙히기
+	// wcscat_s();
 
 
 
