@@ -4,6 +4,7 @@
 #include <wchar.h>
 #include <assert.h>
 #include <iostream>
+#include "ar.h"
 
 //#define HUNGRY 0x01
 //#define THIRSTY 0x02
@@ -36,8 +37,27 @@ int main() {
 
 	free(pF);
 
+	// 가변배열
+	
+	int a = 10;
 
+	int arr[10] = {};
 
+	// 배열 개수를 선언할 때에는 변수를 사용할 수 없다.
+	// int arr[a];
+
+	// 객체 (Instance)
+	// int 
+
+	tArr s1;
+	InitArr(&s1);
+
+	for (int i = 0; i < 10; ++i)
+	{
+		PushBack(&s1, i);
+	}
+
+	ReleaseArr(&s1);
 
 	return 0;
 

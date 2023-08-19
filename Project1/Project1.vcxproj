@@ -142,10 +142,12 @@
     <ClCompile Include="08_12.cpp" />
     <ClCompile Include="08_13.cpp" />
     <ClCompile Include="-08.17.cpp" />
+    <ClCompile Include="ar.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="func.h" />
     <ClInclude Include="common.h" />
+    <ClInclude Include="ar.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

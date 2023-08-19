@@ -60,12 +60,18 @@
     <ClCompile Include="-08.17.cpp">
       <Filter>헤더 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ar.cpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="func.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="common.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ar.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
