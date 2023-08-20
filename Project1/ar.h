@@ -16,7 +16,7 @@ void InitArr(tArr* _pArr);
 void PushBack(tArr* _pArr,int _iData);
 
 // 데이터 재할당 함수
-void Reallocate(tArr* _pArr);
+// void Reallocate(tArr* _pArr); 숨기기
 
 // 배열 메모리 해제 함수
 void ReleaseArr(tArr* _pArr);
