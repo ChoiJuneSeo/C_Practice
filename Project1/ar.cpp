@@ -9,21 +9,6 @@ void InitArr(tArr* _pArr)
 	_pArr->iMaxCount =2;
 }
 
-void PushBack(tArr* _pArr, int _iData)
-{
-	
-	if (_pArr->iMaxCount <= _pArr->icount)
-	{
-		// 재할당
-		Reallocate(_pArr);
-	}
-	
-	// 데이터 추가
-	_pArr->pInt[_pArr->icount++] = _iData;
-
-
-}
-
 void Reallocate(tArr* _pArr)
 {
 	// 1. 2배 더 큰 공간을 동적 할당한다.
@@ -44,6 +29,20 @@ void Reallocate(tArr* _pArr)
 	_pArr->iMaxCount *= 2;
 }
 
+void PushBack(tArr* _pArr, int _iData)
+{
+
+	if (_pArr->iMaxCount <= _pArr->icount)
+	{
+		// 재할당
+		Reallocate(_pArr);
+	}
+
+	// 데이터 추가
+	_pArr->pInt[_pArr->icount++] = _iData;
+
+
+}
 void ReleaseArr(tArr* _pArr)
 {
 	free(_pArr->pInt);
