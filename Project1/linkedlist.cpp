@@ -50,6 +50,22 @@ void ReleaseList(tLL* _plist)
 }
 
 // 만들어보기
-void PushFront(tLL* _pList)
+void PushFront(tLL* _pList, int _iData)
 {
+	node* pNode = (node*)malloc(sizeof(node));
+	
+	pNode->iData = _iData;
+	pNode->pNextNode = nullptr;
+
+	if (_pList->pHeadNode==nullptr)
+	{
+		_pList->pHeadNode = pNode;
+	}
+	else
+	{
+		pNode->pNextNode = _pList->pHeadNode;
+		_pList->pHeadNode = pNode;
+	}
+
+	++_pList->iCount;
 }

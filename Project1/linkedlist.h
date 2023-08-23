@@ -21,4 +21,4 @@ typedef struct _tagList
 void InitList(tLL* _pList);
 void PushBack(tLL* _pList, int _iData);
 void ReleaseList(tLL* _plist);
-void PushFront(tLL* _pList);
+void PushFront(tLL* _pList, int _iData);

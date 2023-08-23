@@ -72,6 +72,9 @@
     <ClCompile Include="func.cpp">
       <Filter>소스 파일\과거</Filter>
     </ClCompile>
+    <ClCompile Include="myArr.cpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linkedlist.h">
@@ -85,6 +88,9 @@
     </ClInclude>
     <ClInclude Include="func.h">
       <Filter>소스 파일\과거</Filter>
+    </ClInclude>
+    <ClInclude Include="myArr.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

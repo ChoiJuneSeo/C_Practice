@@ -2,7 +2,8 @@
 #include <iostream>
 #include <assert.h>
 #include "linkedlist.h"
-
+#include "myArr.h"
+#include <time.h>
 //#include "func.h"
 //#include "common.h"
 //#include <wchar.h>
@@ -19,13 +20,45 @@ int main() {
 
 	// 연결형 리스트
 	tLL list;
+
 	InitList(&list);
+
 	PushBack(&list, 100);
+	PushFront(&list, 500);
 	PushBack(&list, 200);
 	PushBack(&list, 300);
-	
+	PushFront(&list, 700);
 
 	ReleaseList(&list);
+
+	// myArr
+	mAr arr;
+	InitArr(&arr);
+
+	// 난수(랜덤)
+	srand(time(nullptr));
+	
+
+	for (int i = 100; i > 0; --i)
+	{
+		int iRand = rand() % 100 + 1;
+		PushBack(&arr, iRand);
+	}
+
+	for (int i = 0; i < arr.iCount; ++i)
+	{
+		printf("%d\n",arr.pInt[i]);
+
+	}
+	
+	 BubbleSort(&arr);
+	 printf("정렬\n");
+	for (int i = 0; i < arr.iCount; ++i)
+	{
+		printf("%d\n", arr.pInt[i]);
+
+	}
+
 	return 0;
 
 }
