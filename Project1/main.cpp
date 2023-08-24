@@ -1,67 +1,77 @@
-#include <stdio.h>
+
 #include <iostream>
-#include <assert.h>
-#include "linkedlist.h"
-#include "myArr.h"
-#include <time.h>
-//#include "func.h"
-//#include "common.h"
-//#include <wchar.h>
-//#include "ar.h"
-//#define HUNGRY 0x01
-//#define THIRSTY 0x02
-//#define TIRED 0x04
-//#define FIRE 0x08
-//#define COLD 0x10
-//#define POISON 0x20
+#include "ar.h"
+
+struct  tMY
+{
+
+};
+
+class cMY
+{
+	// 접근 제한 지정자
+	// prinate, protected(상속), public
+
+private:
+	int m_i;
+public:
+
+	float m_f;
+public:
+	void SetInt(int i)
+	{
+		m_i = i;
+	}
+
+public:
+	// 생성자
+	cMY()
+	{
+		m_i = 100;
+		m_f = 0.f;
+	}
+	// 이니셜라이져
+	/*cMY() : m_i(100)
+			,m_f(0.f)
+	{
+
+	}*/
+
+	// 소멸자
+	~cMY()
+	{
+
+	}
+	
+};
+
+int main()
+{
+	// C++ class 특징
+	// 생성자, 소멸자
+	// 객체 생성, 소멸 시 자동으로 호출
+	// 직접 만들지 않으면 기본 생성자, 기본 소멸자가 만들어짐
+	
+	// 멤버 함수
+	// 해당 클래스가 사용하는 전용 함수
+	// 해당 클래스의 객체가 필요함
 
 
-int main() {
 
-	// 연결형 리스트
-	tLL list;
-
-	InitList(&list);
-
-	PushBack(&list, 100);
-	PushFront(&list, 500);
-	PushBack(&list, 200);
-	PushBack(&list, 300);
-	PushFront(&list, 700);
-
-	ReleaseList(&list);
-
-	// myArr
-	mAr arr;
+	tArr arr = { };
 	InitArr(&arr);
+	PushBack(&arr, 10);
 
-	// 난수(랜덤)
-	srand(time(nullptr));
-	
+	arr.icount = 100;
 
-	for (int i = 100; i > 0; --i)
-	{
-		int iRand = rand() % 100 + 1;
-		PushBack(&arr, iRand);
-	}
 
-	for (int i = 0; i < arr.iCount; ++i)
-	{
-		printf("%d\n",arr.pInt[i]);
+	ReleaseArr(&arr);
 
-	}
-	
-	 BubbleSort(&arr);
-	 printf("정렬\n");
-	for (int i = 0; i < arr.iCount; ++i)
-	{
-		printf("%d\n", arr.pInt[i]);
 
-	}
+	cMY c;
+
+	c.m_f = 12.34f;
+	c.SetInt(10);
 
 	return 0;
-
 }
-
-// 1. 가변배열 만들기
-// 2. 가변배열 안에 넣은 데이터 정렬 ( 버블 정렬 )

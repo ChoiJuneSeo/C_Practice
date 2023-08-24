@@ -18,9 +18,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="linkedlist.cpp">
       <Filter>헤더 파일</Filter>
     </ClCompile>
@@ -66,13 +63,19 @@
     <ClCompile Include="08_13.cpp">
       <Filter>소스 파일\과거</Filter>
     </ClCompile>
-    <ClCompile Include="ar.cpp">
+    <ClCompile Include="myArr.cpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_08_23.cpp">
       <Filter>소스 파일\과거</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ar.cpp">
+      <Filter>헤더 파일</Filter>
     </ClCompile>
     <ClCompile Include="func.cpp">
-      <Filter>소스 파일\과거</Filter>
-    </ClCompile>
-    <ClCompile Include="myArr.cpp">
       <Filter>헤더 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -80,16 +83,16 @@
     <ClInclude Include="linkedlist.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="myArr.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
     <ClInclude Include="ar.h">
-      <Filter>소스 파일\과거</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="common.h">
-      <Filter>소스 파일\과거</Filter>
+      <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="func.h">
-      <Filter>소스 파일\과거</Filter>
-    </ClInclude>
-    <ClInclude Include="myArr.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
