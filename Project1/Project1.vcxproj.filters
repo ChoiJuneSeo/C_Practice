@@ -69,14 +69,20 @@
     <ClCompile Include="_08_23.cpp">
       <Filter>소스 파일\과거</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="ar.cpp">
       <Filter>헤더 파일</Filter>
     </ClCompile>
     <ClCompile Include="func.cpp">
       <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CArr.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="class1.cpp">
+      <Filter>소스 파일\과거</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +99,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="func.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CArr.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

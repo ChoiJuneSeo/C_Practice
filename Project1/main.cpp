@@ -1,77 +1,46 @@
-
 #include <iostream>
-#include "ar.h"
-
-struct  tMY
-{
-
-};
-
-class cMY
-{
-	// 접근 제한 지정자
-	// prinate, protected(상속), public
-
-private:
-	int m_i;
-public:
-
-	float m_f;
-public:
-	void SetInt(int i)
-	{
-		m_i = i;
-	}
-
-public:
-	// 생성자
-	cMY()
-	{
-		m_i = 100;
-		m_f = 0.f;
-	}
-	// 이니셜라이져
-	/*cMY() : m_i(100)
-			,m_f(0.f)
-	{
-
-	}*/
-
-	// 소멸자
-	~cMY()
-	{
-
-	}
-	
-};
+#include "CArr.h"
+#include "myArr.h"
 
 int main()
 {
-	// C++ class 특징
-	// 생성자, 소멸자
-	// 객체 생성, 소멸 시 자동으로 호출
-	// 직접 만들지 않으면 기본 생성자, 기본 소멸자가 만들어짐
+	// 구조체 --> 클래스
+
+	// 객체지향 언어 특징
+	// 1. 캡슐화
+	// 기능을 수행하기 위해 필요한 멤버 선언, 묶음, 은닉성
+	// 멤버 함수들
+
+	// 2. 상속
+
+	// 3. 다형성
+
+	// 4. 추상화
+
+	// 구조체 버전 가변 배열 --> 클래스 버전
+
+	// C++ 동적 할당 new, delete
 	
-	// 멤버 함수
-	// 해당 클래스가 사용하는 전용 함수
-	// 해당 클래스의 객체가 필요함
+	// CArr 예시
 
-
-
-	tArr arr = { };
+	mAr arr = {};
 	InitArr(&arr);
+
 	PushBack(&arr, 10);
-
-	arr.icount = 100;
-
+	PushBack(&arr, 20);
+	PushBack(&arr, 30);
 
 	ReleaseArr(&arr);
 
+	CArr cArr;
+	
+	cArr.push_back(10);
+	cArr.push_back(20);
+	cArr.push_back(30);
 
-	cMY c;
+	int a = cArr[1];
+	cArr[1] = 30;
 
-	c.m_f = 12.34f;
-	c.SetInt(10);
 
 	return 0;
 }
