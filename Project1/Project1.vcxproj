@@ -184,7 +184,10 @@
     <ClCompile Include="class1.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="08_27.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="9_05.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CArr.h" />
@@ -199,6 +202,7 @@
     </ClInclude>
     <ClInclude Include="linkedlist.h" />
     <ClInclude Include="myArr.h" />
+    <ClInclude Include="CList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
